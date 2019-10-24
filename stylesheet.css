@@ -1,0 +1,31 @@
+body {
+  background-color: lightblue;
+  font-family: "Georgia";
+}
+
+/*This is the generic style class created to use with any HTML inputs*/
+.useme {
+  color: red;
+}
+
+/*Contains style to match the requirement specified*/
+h1 {
+  color: blue;
+  margin-left: 20px;
+  text-shadow: 2px 2px #32CD32;
+  background-color: lightblue;
+  width: 700px;
+  padding: 25px;
+  border: 5px solid navy;
+}
+
+/*Adds style to the Button field*/
+input[type=submit], input[type=button]{
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
