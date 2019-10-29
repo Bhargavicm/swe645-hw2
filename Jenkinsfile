@@ -3,8 +3,6 @@ pipeline {
   stages {
     stage('Prep') {
       steps {
-        sh '''kubectl delete deploy hw2-deployment
-kubectl delete svc hw2-svc'''
         dir(path: '/home/ubuntu/cicd/git-code') {
           sh 'git pull'
         }
