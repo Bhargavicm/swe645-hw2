@@ -33,7 +33,7 @@ kubectl delete svc hw2-svc'''
       steps {
         dir(path: '/home/ubuntu/cicd/kub-deploy') {
           sh 'kubectl apply -f hw2-dep.yaml'
-          sh 'sh hw2-svc.sh'
+          sh 'kubectl apply -f hw2-svc.yaml'
         }
 
       }
