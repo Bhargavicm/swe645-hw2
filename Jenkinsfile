@@ -30,6 +30,7 @@ pipeline {
     stage('Deploy') {
       steps {
         dir(path: '/home/ubuntu/cicd/kub-deploy') {
+          sh 'kubectl delete -f hw2-dep.yaml'
           sh 'kubectl apply -f hw2-dep.yaml'
           sh 'kubectl apply -f hw2-svc.yaml'
         }
